@@ -27,6 +27,7 @@ body {
 }
 
 header {
+  background-color: white;
   height: 10vh;
 }
 
@@ -37,6 +38,10 @@ header div {
 header div img {
   width: 100%;
   padding: 20px;
+}
+
+main {
+  height: 150vh;
 }
 
 #search {
@@ -71,16 +76,34 @@ header div img {
 }
 
 #search .content_search .bar {
-  width: 100%;
+  width: 30%;
+  margin: auto;
+  background-color: white;
+  border-bottom: #6c60328e 10px solid;
 }
 
 #search .content_search .bar input {
   padding: 10px;
   margin: 10px 20px;
-  width: 30%;
+  width: 100%;
   font-size: 1vw;
   border: none;
-  border-bottom: #6c60328e 10px solid;
+}
+
+#search .content_search .bar input::-webkit-input-placeholder {
+  font-size: 0.8vw;
+}
+
+#search .content_search .bar input:-ms-input-placeholder {
+  font-size: 0.8vw;
+}
+
+#search .content_search .bar input::-ms-input-placeholder {
+  font-size: 0.8vw;
+}
+
+#search .content_search .bar input::placeholder {
+  font-size: 0.8vw;
 }
 
 #search .content_search .bar button {
@@ -98,5 +121,79 @@ header div img {
 
 #search .content_search .bar button:hover {
   background-color: #9fc184be;
+}
+
+#search .content_search .bar i {
+  padding: 20px;
+  color: #6c60328e;
+  cursor: pointer;
+}
+
+#search .content_search #result {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#search .content_search #result #list_result {
+  width: 30%;
+  margin: auto;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+#search .content_search #result #list_result li {
+  text-align: center;
+  background-color: #6c60328e;
+  width: 100%;
+  padding: 10px;
+  text-transform: capitalize;
+  padding: 20px;
+}
+
+#search .content_search #result #list_result li a {
+  color: white;
+}
+
+#monster {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+}
+
+#monster #picture_monster {
+  width: 20%;
+}
+
+#monster #picture_monster img {
+  width: 100%;
+  -webkit-box-shadow: -30px 29px 0px -5px #9fc184be;
+  box-shadow: -30px 29px 0px -5px #9fc184be;
+}
+
+#monster #text_monster {
+  width: 60%;
+  padding: 20px;
+}
+
+#monster #text_monster h1 {
+  text-transform: uppercase;
+  padding: 10px;
+  color: #9fc184be;
+}
+
+#monster #text_monster p {
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */

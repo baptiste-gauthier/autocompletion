@@ -25,7 +25,10 @@ body{
 
 header{
     background-color: white;
-    height: 10vh ;
+    display: flex;
+    align-items: center;
+
+    // height: 10vh ;
     div{
         width: 5%;
         
@@ -34,22 +37,30 @@ header{
             padding: 20px ;
         }
     }
+    ul{
+        display: flex; 
+        align-items: center;
+    }
+    li {
+        padding: 10px;
+    }
 }
 
-main{
-    height : 150vh ; 
-}
+// main{
+//     height : 150vh ; 
+// }
 
 
 #search{
-    @extend %dflex; 
-    height: 90vh;
+    // @extend %dflex; 
+    // height: 90vh;
     & .content_search{
         display: flex;
         flex-direction: column; 
         align-items: center;
         width: 100% ; 
-        transform: translateY(-10vh);
+        margin-top: 50px;
+        // transform: translateY(-10vh);
         & .title{
             h1{
                 font-size: 3.7vw;
@@ -127,6 +138,28 @@ main{
 
     }
 
+}
+
+#search_result{
+    div{
+        padding: 20px 50px ; 
+
+        h3{
+            font-style: italic;
+            text-transform: capitalize;
+            a{
+                color:#96C8D9;
+            }
+        }
+    }
+    h1{
+        padding: 20px 50px ; 
+        text-decoration: underline;
+    }
+
+    .error{
+        padding: 20px 50px ; 
+    }
 }
 
 // page element 

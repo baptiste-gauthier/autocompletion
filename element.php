@@ -26,16 +26,30 @@
     </head>
 
     <body>
-        <section id="monster">
-            <div id="picture_monster">
-                <img src="<?= $result['image'] ;?>" alt="img_monster">
-            </div>
-            <div id="text_monster">
-                <h1> <?= $result['name'] ; ?></h1>
-                <p> <?= $result['description'] ; ?> </p>
-                <p> Location : <?= $result['common_locations'] ;?> </p>
-            </div>
-        </section>    
+        <header>
+            <div>
+                <img src="images/tri_force.svg" alt="triforce">
+            </div>  
+            <ul>
+                <li> Home </li>
+                <li> Wiki </li>
+                <li> Contact </li>
+            </ul>      
+
+        </header>
+
+        <main>
+            <section id="monster">
+                <div id="picture_monster">
+                    <img src="<?= $result['image'] ;?>" alt="img_monster">
+                </div>
+                <div id="text_monster">
+                    <h1> <?= $result['name'] ; ?></h1>
+                    <p> <?= $result['description'] ; ?> </p>
+                    <p> Location : <?= $result['common_locations'] ;?> </p>
+                </div>
+            </section>  
+        </main>  
         
     </body>
 </html>

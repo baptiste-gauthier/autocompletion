@@ -18,14 +18,25 @@ if(isset($_GET['search']) && $_GET['search'] != "")
     $result = $requete->fetchAll(PDO::FETCH_ASSOC) ;
 
     // var_dump($result) ;
-
-    foreach($result as $key => $value){
-        ?>
-            <div>
-                <h3> <?= $value['name'] ; ?> </h3>
-                <p> <?= $value['description'] ; ?> </p>
-            </div>
-
+    ?>
+    <h1> Resultat de la recherche : </h1>
     <?php
+
+    if(empty($result))
+    {
+        echo '<p class="error"> No results have been found :( </p>' ; 
     }
+    else{
+
+        foreach($result as $key => $value){
+            ?>
+                <div>
+                    <h3> <a href="element.php?id=<?= $value['id'] ; ?>"><?= $value['name'] ; ?></a></h3>
+                    <p> <?= $value['description'] ; ?> </p>
+                </div>
+    
+        <?php
+        }
+    }
+
 }

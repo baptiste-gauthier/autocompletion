@@ -13,7 +13,12 @@
         <header>
             <div>
                 <img src="images/tri_force.svg" alt="triforce">
-            </div>    
+            </div>  
+            <ul>
+                <li> Home </li>
+                <li> Wiki </li>
+                <li> Contact </li>
+            </ul>      
 
         </header>
 
@@ -32,12 +37,12 @@
                         <ul id="list_result">
 
                         </ul>
-                    </div>
-
-                    <div id="search_result">
-
-                    </div>      
+                    </div>    
                 </article>    
+            </section>
+
+            <section id="search_result">
+                
             </section>
 
 

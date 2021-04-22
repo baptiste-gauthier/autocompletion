@@ -82,6 +82,8 @@ $(document).ready(function () {
 $(document).ready( () => {
     $(document).on("click" , "#search_icon" , () => {
 
+        $("#result").attr("style", "display: none;");
+        $('#search_result').empty() ; 
         var search = $('#search_bar').val();
 
         $.ajax({
@@ -95,5 +97,13 @@ $(document).ready( () => {
         }); 
     })
     
-
 })
+
+$('#search_bar').keydown(function(e) {
+    if(e.key == 'Enter')
+    {
+        $('#search_icon').click() ; 
+        $('#search_bar').blur() ; // enleve le focus de l'input, pour garder le display none 
+
+    } 
+});

@@ -10,7 +10,7 @@
   list-style: none;
 }
 
-#search, #search .content_search .bar {
+#search .content_search .bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +28,12 @@ body {
 
 header {
   background-color: white;
-  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header div {
@@ -40,12 +45,17 @@ header div img {
   padding: 20px;
 }
 
-main {
-  height: 150vh;
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#search {
-  height: 90vh;
+header li {
+  padding: 10px;
 }
 
 #search .content_search {
@@ -60,8 +70,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  -webkit-transform: translateY(-10vh);
-          transform: translateY(-10vh);
+  margin-top: 50px;
 }
 
 #search .content_search .title h1 {
@@ -157,6 +166,28 @@ main {
 
 #search .content_search #result #list_result li a {
   color: white;
+}
+
+#search_result div {
+  padding: 20px 50px;
+}
+
+#search_result div h3 {
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+#search_result div h3 a {
+  color: #96C8D9;
+}
+
+#search_result h1 {
+  padding: 20px 50px;
+  text-decoration: underline;
+}
+
+#search_result .error {
+  padding: 20px 50px;
 }
 
 #monster {

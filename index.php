@@ -11,13 +11,13 @@
     <body>
 
         <header>
-            <div>
+            <div class="logo_header">
                 <img src="images/tri_force.svg" alt="triforce">
             </div>  
             <ul>
-                <li> Home </li>
-                <li> Wiki </li>
-                <li> Contact </li>
+                <li><a href="index.php"> Home </a></li>
+                <li><a href="#"> Wiki </a></li>
+                <li><a href="#"> Contact </a></li>
             </ul>      
 
         </header>

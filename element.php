@@ -23,18 +23,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Element </title>
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
     </head>
 
     <body>
-        <header>
-            <div>
-                <img src="images/tri_force.svg" alt="triforce">
-            </div>  
-            <ul>
-                <li> Home </li>
-                <li> Wiki </li>
-                <li> Contact </li>
-            </ul>      
+        <header id="header_nav">
+            <div class="nav">
+                <div class="logo_header logo">
+                    <img src="images/tri_force.svg" alt="triforce">
+                </div>  
+                <ul>
+                    <li><a href="index.php"> Home </a></li>
+                    <li><a href="#"> Wiki </a></li>
+                    <li><a href="#"> Contact </a></li>
+                </ul> 
+            </div>
+
+            <div class="search">
+                <div>
+                    <input type="search" name="bar" id="search_bar" placeholder="Type to search... (ex: Moblin, Lynel, Guardian...)">
+                    <i class="fa fa-search" id="search_icon"></i> 
+                </div>
+                <div id="result" style="display: none;">
+                    <ul id="list_result">
+
+                    </ul>
+                </div>  
+            </div> 
 
         </header>
 
@@ -49,7 +65,16 @@
                     <p> Location : <?= $result['common_locations'] ;?> </p>
                 </div>
             </section>  
+
+            <section id="search_result">
+                
+            </section>
         </main>  
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+
         
     </body>
 </html>

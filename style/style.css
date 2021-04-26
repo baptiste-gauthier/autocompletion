@@ -36,11 +36,24 @@ header {
           align-items: center;
 }
 
-header div {
+header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  width: 20% !important;
+}
+
+header .logo_header {
   width: 5%;
 }
 
-header div img {
+header .logo_header img {
   width: 100%;
   padding: 20px;
 }
@@ -56,6 +69,72 @@ header ul {
 
 header li {
   padding: 10px;
+}
+
+header li:hover {
+  cursor: pointer;
+}
+
+header li a {
+  color: black;
+}
+
+#header_nav {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+#header_nav .search {
+  width: 25%;
+  margin: 0px 30px;
+  border: black 2px solid;
+  border-radius: 3em;
+  padding: 8px;
+}
+
+#header_nav .search input {
+  width: 90%;
+  border: none;
+}
+
+#header_nav .search i {
+  padding: 8px;
+}
+
+#header_nav .search #result {
+  width: 100%;
+}
+
+#header_nav .search #result ul {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #9fc184ca;
+  width: 25%;
+}
+
+#header_nav .search #result ul li {
+  padding: 10px;
+  width: 100%;
+  text-transform: capitalize;
+  text-align: center;
+  color: black;
+}
+
+#header_nav .search #result ul li a {
+  color: black;
 }
 
 #search .content_search {

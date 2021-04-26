@@ -66,11 +66,11 @@ $(document).ready(function () {
                 success: function (response) {
                     if(response == "")
                     {
-                        $('#list_result').append('<p> Aucun resultat n\'a été trouver </p> ') ;
+                        $('#list_result').append('<p> No result </p> ') ;
                     }
                     else{
                         $('#list_result').append(response) ;   
-                        $('#list_result').html().replaceAll(response); 
+                        // $('#list_result').html().replaceAll(response); 
                     }
                 }
             });

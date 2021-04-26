@@ -19,7 +19,7 @@ if(isset($_GET['search']) && $_GET['search'] != "")
 
     // var_dump($result) ;
     ?>
-    <h1> Resultat de la recherche : </h1>
+    <h1> Search result : </h1>
     <?php
 
     if(empty($result))

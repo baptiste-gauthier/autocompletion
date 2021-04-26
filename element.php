@@ -71,10 +71,13 @@
             </section>
         </main>  
 
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="script.js"></script>
-
+        <footer>
+            <p> Breath of the Wild - Monster search </p>
+            <p> @ 2021, GAUTHIER Baptiste </p>
+        </footer>
         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script/script.js"></script>
+
     </body>
 </html>

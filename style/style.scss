@@ -197,7 +197,6 @@ header{
                     width: 100%;
                     padding: 10px; 
                     text-transform: capitalize;
-                    padding: 20px;
                     a{
                         color: white ;
                     }
@@ -258,6 +257,20 @@ header{
         & p{
             padding: 10px;
         }
+    }
+}
+
+// footer 
+
+footer{
+    background-color: #6c60328e ;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    p{
+        padding: 10px;
     }
 }
 

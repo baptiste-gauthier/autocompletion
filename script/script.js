@@ -60,7 +60,7 @@ $(document).ready(function () {
         {
             $.ajax({
                 type: "GET",
-                url: "list_result.php",
+                url: "pages/list_result.php",
                 data: "search=" + search,
                 dataType: "text",
                 success: function (response) {
@@ -88,7 +88,7 @@ $(document).ready( () => {
 
         $.ajax({
             type: "GET",
-            url: "search_result.php",
+            url: "pages/search_result.php",
             data: "search=" + search,
             dataType: "text",
             success: function (response) {

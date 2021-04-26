@@ -45,10 +45,16 @@
                 
             </section>
 
+            <footer>
+                <p> Breath of the Wild - Monster search </p>
+                <p><i class="fa fa-copyright"></i> 2021, GAUTHIER Baptiste </p>
+            </footer>
+
 
         </main>
   
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="script.js"></script>
+        <script src="script/script.js"></script>
+        
     </body>
 </html>
